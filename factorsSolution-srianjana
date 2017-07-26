@@ -1,0 +1,20 @@
+public class factors {
+    public static void main(String[] args) {
+        calculateFactor(20);
+    }
+
+    public static void calculateFactor(int factorNum){
+            int count = 0;
+
+            for(int i = 1;i<=factorNum;i++){
+                if(factorNum%i == 0){
+                    count++;
+                    System.out.print(i+" ");
+                }
+            }
+            System.out.println(" :factors for "+factorNum);
+            System.out.println(factorNum + " has " + count + " factors");
+
+    }
+
+}
